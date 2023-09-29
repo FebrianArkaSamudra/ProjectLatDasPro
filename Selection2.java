@@ -13,8 +13,20 @@ public class Selection2{
         float tugas = input00.nextFloat();
         float total = (uas * 0.4F) +  (uts * 0.3F) +  (kuis * 0.1F) + (tugas * 0.2F);
         
-        String message = total < 65 ? "Retake" : "Pass";
-        System.out.println("Final Grade: " + total + " and the decision is " + message);
+        if (total > 80 && total <=100)
+           System.out.println("Nilai Huruf : A, Nilai Setara: 4, Sangat Baik");
+        else if (total > 73 && total <=80)
+           System.out.println("Nilai Huruf : B+, Nilai Setara: 3.5, Lebih dari baik");
+        else if (total > 65 && total <=73)
+           System.out.println("Nilai Huruf : B, Nilai Setara: 3, Baik");
+        else if (total > 60 && total <=65)
+           System.out.println("Nilai Huruf : C+, Nilai Setara: 2.5, Lebih dari cukup");
+        else if (total > 50 && total <=60)
+           System.out.println("Nilai Huruf : C, Nilai Setara: 2, Cukup");
+        else if (total > 39 && total <=50)
+           System.out.println("Nilai Huruf : D, Nilai Setara: 1, Kurang");
+        else 
+           System.out.println("Nilai Huruf : E, Nilai Setara: 0, Gagal");
         
         
     }
