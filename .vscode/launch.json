@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Circle",
+            "request": "launch",
+            "mainClass": "Circle",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "JobsheetWeek3",
+            "request": "launch",
+            "mainClass": "JobsheetWeek3",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "JobsheetWeek3kedua",
+            "request": "launch",
+            "mainClass": "JobsheetWeek3kedua",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "JobsheetWeek3keempat",
+            "request": "launch",
+            "mainClass": "JobsheetWeek3keempat",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "JobsheetWeek3kelima",
+            "request": "launch",
+            "mainClass": "JobsheetWeek3kelima",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "JobsheetWeek3ketiga",
+            "request": "launch",
+            "mainClass": "JobsheetWeek3ketiga",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "PurchasePrice",
+            "request": "launch",
+            "mainClass": "PurchasePrice",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "Salary",
+            "request": "launch",
+            "mainClass": "Salary",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "Selection1",
+            "request": "launch",
+            "mainClass": "Selection1",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "Selection2",
+            "request": "launch",
+            "mainClass": "Selection2",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "Selection3",
+            "request": "launch",
+            "mainClass": "Selection3",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "pararel",
+            "request": "launch",
+            "mainClass": "pararel",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        }
+    ]
+}

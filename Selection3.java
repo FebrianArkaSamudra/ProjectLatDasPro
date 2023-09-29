@@ -16,7 +16,6 @@ public class Selection3{
             case '+':
                 results = operand1 + operand2;
                 System.out.println(operand1 + " + " + operand2 + " = " + results);
-                break;
             case '-':
                 results = operand1 - operand2;
                 System.out.println(operand1 + " - " + operand2 + " = " + results);
@@ -29,6 +28,8 @@ public class Selection3{
                 results = operand1 / operand2;
                 System.out.println(operand1 + " / " + operand2 + " = " + results);
                 break;
+            default:
+                System.out.println("Invalid opera");
         }
     }
 }
