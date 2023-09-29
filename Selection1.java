@@ -10,5 +10,9 @@ public class Selection1{
         else
             System.out.println(number+" is an odd number! ");
 
+        String results = number % 2 == 0 ? number+" is an even number! " : number+" is an odd number! ";
+        System.out.println(results);
+            
+
     }
 }
