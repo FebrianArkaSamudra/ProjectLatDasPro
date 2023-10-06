@@ -2,8 +2,7 @@ import java.util.Scanner;
 public class Selection2Exp110{
     public static void main(String[] args) {
         Scanner scan = new Scanner (System.in);
-        System.out.print("input year: ");
-        int year = scan.nextInt();
+        int year = 2100;
         if(year%4 == 0)
             if(year%100 != 0)
             System.out.println("Leap Year");

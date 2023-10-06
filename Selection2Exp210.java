@@ -11,12 +11,18 @@ public class Selection2Exp210{
         System.out.print("Masukkan angle3: ");
         int angle3 = scan.nextInt();
         totalAngle=angle1 + angle2 + angle3;
-        if(totalAngle == 180)
-            if(angle1==90 || angle2==90 || angle3==90)
-              System.out.println("Right Triangle");
-            else
-                System.out.println("Not a Right Triangle");
+        if(totalAngle == 180){
+            if (angle1 == 90 || angle2 == 90 || angle3 == 90){
+                System.out.println("RIGHT TRIANGLE");
+            }
+                else if (angle1 == 60 && angle2 == 60 && angle3 == 60){
+                System.out.println("equilateral triangle");
+            }
+            else if (angle1 == angle2 && angle3 == 80){
+                System.out.println("isosceles triangle");
+            }
+        }
         else
-            System.out.println("Not a Triangle");
+        System.out.println("Not a triangle");
     }
 }
