@@ -2,9 +2,10 @@ import java.util.Scanner;
 public class WhileOvertimePay{
     public static void main(String[] args) {
        Scanner scan = new Scanner(System.in);
-       int numEmployee, overtimeHours;
+       int numEmployee;
        double overtimePay = 0;
        double totalOvertimePay = 0;
+       int overtimeHours;
        String position;
        System.out.print("Employee number = ");
        numEmployee = scan.nextInt();
@@ -22,9 +23,13 @@ public class WhileOvertimePay{
                overtimePay=overtimeHours*100000;
            }else if(position.equalsIgnoreCase("staff")){
                overtimePay=overtimeHours*75000;
-           }
-
+           }else{
+            System.out.println("Invalid Position");
+            i--;
+            continue;
+            }
            totalOvertimePay += overtimePay;
+           
        }
        System.out.println("Total of Overtime Pay = "+totalOvertimePay);
     }

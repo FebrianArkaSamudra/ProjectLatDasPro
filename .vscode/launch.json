@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WhileOvertimePay",
+            "request": "launch",
+            "mainClass": "WhileOvertimePay",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "formultiples08",
+            "request": "launch",
+            "mainClass": "formultiples08",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "Selection2Exp110",
+            "request": "launch",
+            "mainClass": "Selection2Exp110",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
+            "name": "ForMultiple",
+            "request": "launch",
+            "mainClass": "ForMultiple",
+            "projectName": "ProjectLatDasPro_a5af44c3"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

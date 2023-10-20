@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ForMultiple{
+public class WhileMultiple{
     public static void main(String[] args) {
        Scanner scan = new Scanner(System.in);
        int multiple;

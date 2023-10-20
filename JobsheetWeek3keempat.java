@@ -4,9 +4,9 @@ public class JobsheetWeek3keempat{
     Scanner sc = new Scanner(System.in);
     int base, height;
     float area;
-    System.out.print("Input base: ");
+    System.out.print("Input base   : ");
     base=sc.nextInt();
-    System.out.print("Input height ");
+    System.out.print("Input height : ");
     height = sc.nextInt();
     area = base * height / 2;
     System.out.print("Area of the triangle:" + area);    
