@@ -20,8 +20,16 @@ public class BioskopWithScanner10 {
                 column = sc.nextInt();
                 sc.nextLine();
 
-                audience[row - 1][column - 1] = name;
-                System.out.print("Are there any other audiences to be added? (y/n): ");
+                if(audience[row - 1][column - 1] == null){
+                    audience[row - 1][column - 1] = name;
+                System.out.println("Succesfuly booked");
+                    
+                }
+                else{
+                    System.out.println("The seat is already booked \nChoose the other");
+                    break;
+                }
+                System.out.println("Are there any other audiences to be added? (y/n): ");
                 next = sc.nextLine();
 
                 if (next.equalsIgnoreCase("n")) {
