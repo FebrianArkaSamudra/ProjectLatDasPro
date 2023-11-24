@@ -13,7 +13,9 @@ public class ExpressingGratitude {
         System.out.println("Thaknyou for "+name+" being the best teacher in the world.\n"+
         "you inspired in me a love for learning and made me feel like i could ask you anything. ");
     }
-    
+    public static void sayAdditionalGreetings(String additionalGreeting) {
+        System.out.println(additionalGreeting);
+    }
     public static void main(String[] args) {
         sayThankyou();
 
