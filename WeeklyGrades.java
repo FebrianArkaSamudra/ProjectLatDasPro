@@ -3,11 +3,25 @@ import java.util.Scanner;
 public class WeeklyGrades {
 
     public static void main(String[] args) {
-        int[][] grades = new int[7][5];
+        Scanner input = new Scanner(System.in);
+
+        // Get user input for the number of students
+        System.out.print("Enter the number of students: ");
+        int numberOfStudents = input.nextInt();
+
+        // Get user input for the number of weeks
+        System.out.print("Enter the number of weeks: ");
+        int numberOfWeeks = input.nextInt();
+
+        int[][] grades = new int[numberOfStudents][numberOfWeeks];
+
         input(grades);
         output(grades);
-        int res[] = getMaxGrade(grades);
-        System.out.println("Max grade "+res[0]+" located in week = "+res[1]);
+        int[] res = getMaxGrade(grades);
+
+        System.out.println("Max grade " + res[0] + " located in week = " + res[1]);
+
+        input.close();
     }
     static void input(int[][] data){
         Scanner input = new Scanner(System.in);
