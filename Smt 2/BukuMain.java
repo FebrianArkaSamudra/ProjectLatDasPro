@@ -16,5 +16,9 @@ public class BukuMain {
         Object bk2 = new Object("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Object bukuarka = new Object("Febrian Arka", "arka", 170, 45, 75000);
+        bukuarka.terjual(20);
+        bukuarka.tampilInformasi();
     }
 }
