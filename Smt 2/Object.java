@@ -2,7 +2,7 @@ public class Object {
 
     String judul, pengarang;
     int halaman, stok, harga;
-   
+  
      
     void tampilInformasi() {
         System.out.println("Judul: " + judul);
@@ -12,7 +12,11 @@ public class Object {
         System.out.println("Harga: Rp " + harga);
     }
     void  terjual(int jml) {
-        stok -= jml;
+        if (stok>0) {
+            stok -= jml;
+        }else{
+            
+        }
     }
 
     void restock(int jml) {
