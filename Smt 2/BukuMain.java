@@ -13,6 +13,8 @@ public class BukuMain {
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
-        
+        Object bk2 = new Object("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+        bk2.terjual(11);
+        bk2.tampilInformasi();
     }
 }
