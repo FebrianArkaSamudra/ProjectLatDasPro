@@ -1,3 +1,5 @@
+//package week2;
+
 public class Object {
 
     String judul, pengarang;
