@@ -23,8 +23,8 @@ public class MainGeom {
         for(int i=0;i<3;i++){
             System.out.println("Vol kerucut ke-"+i+"="+sqp[i].calcVol());
             System.out.println("Luas kerucut ke-"+i+"="+sqp[i].calcSurface());
-            System.out.println("Vol limas ke-"+i+"="+sqp[i].calcVol());
-            System.out.println("Luas limas ke-"+i+"="+sqp[i].calcSurface());
+            System.out.println("Vol limas ke-"+i+"="+sp[i].calcVol());
+            System.out.println("Luas limas ke-"+i+"="+sp[i].calcSurface());
         }
     }
 }

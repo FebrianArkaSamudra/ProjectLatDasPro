@@ -3,8 +3,11 @@ import java.util.Scanner;
 public class ArrayOfObjects {
 
     public static void main(String[] args) {
-        Rectangle[] rectangleArray = new Rectangle[3];
+        
         Scanner sc = new Scanner(System.in);
+        System.out.print("Input the length of an array : ");
+        int n = sc.nextInt();
+        Rectangle[] rectangleArray = new Rectangle[n];
 
         for (int i = 0; i<3; i++) {
             rectangleArray[i] = new Rectangle();
@@ -17,9 +20,12 @@ public class ArrayOfObjects {
             rectangleArray[i].width = sc.nextInt();
         }
 
-    for (int i = 0;  i < 10; i++) {
+    System.out.println();
+    System.out.println("This is the results of width and height");    
+
+    for (int i = 0;  i < rectangleArray.length; i++) {
         System.out.println("Rectangle " + i);
-        System.out.println("Width: " + rectangleArray[0].width + ", length: " + rectangleArray[0].length);
+        System.out.println("Width: " + rectangleArray[0].width + ", length: " + rectangleArray[i].length);
     }
 
     /*rectangleArray[0] = new Rectangle();
