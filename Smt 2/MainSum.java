@@ -6,24 +6,34 @@ public class MainSum {
         Scanner sc = new Scanner(System.in);
         System.out.println("================================================");
         System.out.println("Program for Calculating Total Profits");
-        System.out.print("Input the number of Months : ");
-        int toElemen=sc.nextInt();
-        Sum sm = new Sum(toElemen);
-        sm.elemen = toElemen;
+        System.out.print("Input the number of Companies : ");
+        int numCompanies=sc.nextInt();
+        
+        Sum[] companySums = new Sum[numCompanies];
 
         System.out.println("================================================");
-        for (int i = 0; i < sm.elemen; i++) {
-            System.out.print("Input the profit of the month to - "+(i+1)+" = ");
-            sm.profit[i] = sc.nextDouble();
+        for (int i = 0; i < numCompanies; i++) {
+            System.out.println("Input name of company "+(i+1));
+            System.out.print("Input the number of months for company "+(i+1)+" : ");
+            int toElement = sc.nextInt();
+            companySums[i] = new Sum(toElement);
+            
+            System.out.println("Input profit for company "+(i+1)+" : ");
+            for(int j=0; j < toElement; j++){
+            System.out.print("Input the profit of the month to - "+(j+1)+" = ");
+            companySums[i].profit[j] = sc.nextDouble();
+            }
+            
         }
 
         System.out.println("================================================");
-        System.out.println("Algoritma Brute Force");
-        System.out.println("Total profits of the company for " + sm.elemen + " month is = "
-                +sm.totalBF(sm.profit));
-        System.out.println("================================================");
-        System.out.println("Algoritma Divide Conquer");
-        System.out.println("Total profits of the company for " + sm.elemen + " month is = "
-                +sm.totalDC(sm.profit, 0, sm.elemen-1));
+        System.out.println("Total profit for each company:");
+
+        for(int i = 0; i < numCompanies; i++){
+            System.out.println("Company "+(i+1)+" :");
+            System.out.println("Total profit using Brute Force : "+ companySums[i].totalBF(companySums[i].profit));
+            System.out.println("Total using Divide Conquer : "+ companySums[i].totalDC(companySums[i].profit, 0, companySums[i].elemen-1));
+        }
+        
     }
 }

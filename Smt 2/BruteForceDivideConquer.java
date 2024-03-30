@@ -17,14 +17,22 @@ public class BruteForceDivideConquer {
       System.out.println("==================================================");
       System.out.println("Factorial Results with Bruce Force");
       for (int i = 0; i < elemen; i++) {
+         long faktorialBFStart = System.nanoTime();
          System.out.println("Factorial of value "+fk[i].num+" is : "+fk[i].faktorialBF(fk[i].num));
+         long faktorialBFEnd = System.nanoTime();
+         System.out.printf("Time in nanosecond: %,d\n",faktorialBFEnd - faktorialBFStart);
       }
       System.out.println("===================================================");
       System.out.println("Factorial Results with Divide and Conquer");
       for (int i = 0; i < elemen; i++) {
+         long faktorialDCStart = System.nanoTime();
          System.out.println("Factorial of value "+fk[i].num+" is : "+fk[i].faktorialDC(fk[i].num));
+         long faktorialDCEnd = System.nanoTime();
+         System.out.printf("Time in nanosecond: %,d\n",faktorialDCEnd - faktorialDCStart);
       }
       System.out.println("==================================================");
+   
+      sc.close();
    }
    
    
