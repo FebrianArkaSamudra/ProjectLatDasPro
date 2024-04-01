@@ -28,5 +28,14 @@ public class Main {
         data.bubbleSort();
         data.print();
 
+        System.out.println("Ascending Sorted student list");
+        data.selectionSort();
+        data.print();
+
+        System.out.println("Ascending Sorted student list");
+        data.insertionSort(false);
+        data.print();
+
+
     }
 }
