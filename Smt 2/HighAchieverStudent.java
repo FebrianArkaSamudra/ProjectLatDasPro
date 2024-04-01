@@ -48,18 +48,18 @@ public class HighAchieverStudent {
         for (int i = 0; i < list.length-1; i++) {
             Student temp = list[i];
             int j = i;
-            if(asc) {
-                while (j > 0 && list[j-1].gpa > temp.gpa) {
-                    list[j] = list[j-1];
-                    j--;
-                }
-            } else {
-                while (j > 0 && list[j-1].gpa < temp.gpa) {
-                    list[j] = list[j-1];
-                    j--;
-                }
+        if(asc) {
+            while (j > 0 && list[j-1].gpa > temp.gpa) {
+            list[j] = list[j-1];
+            j--;
             }
-            list[j] = temp;
+        } else {
+            while (j > 0 && list[j-1].gpa < temp.gpa) {
+            list[j] = list[j-1];
+            j--;
+            }
+        }
+        list[j] = temp;
         }
     }
 }
