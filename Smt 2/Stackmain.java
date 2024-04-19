@@ -8,6 +8,8 @@ public class Stackmain {
         stk.print();
         stk.push(11);
         stk.push(34);
+        stk.push(18);
+        stk.push(40);
         stk.pop();
         stk.peek();
         stk.print();
